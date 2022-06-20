@@ -7,9 +7,9 @@
 #SBATCH --partition=400p48h
 #SBATCH --qos=funded
 #SBATCH --time=01:00:00
-#SBATCH --mail-user=wnw36@msstate.edu
+#SBATCH --mail-user=USER@msstate.edu
 #SBATCH --mail-type=ALL
-#SBATCH --account=060803-362129
+#SBATCH --account=######-######
 #SBATCH --exclusive
 ulimit -s unlimited
 export OMP_NUM_THREADS=1
@@ -19,6 +19,6 @@ module purge
 module load intel/2021.2
 module load impi/2021.2
 module load contrib
-module load cp2k/9.1
+module load cp2k/9.1s
 
 srun cp2k.popt -i cp2k.inp -o cp2k.out
