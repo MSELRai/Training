@@ -19,6 +19,6 @@ module purge
 module load intel/2021.2
 module load impi/2021.2
 module load contrib
-module load cp2k/9.1s
+module load cp2k/9.1
 
 srun cp2k.popt -i cp2k.inp -o cp2k.out
