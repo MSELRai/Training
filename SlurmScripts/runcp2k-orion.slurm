@@ -1,7 +1,7 @@
 #!/bin/bash
-#SBATCH --job-name=Ar-MC
-#SBATCH --output=Ar-MC.o%j
-#SBATCH --error=Ar-MC.e%j
+#SBATCH --job-name=MYCP2K
+#SBATCH --output=MYCP2K.o%j
+#SBATCH --error=MyCP2K.e%j
 #SBATCH --nodes=1
 #SBATCH --ntasks-per-node=40
 #SBATCH --partition=400p48h
